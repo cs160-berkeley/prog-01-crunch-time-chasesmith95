@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">CalCalc</string>
+    <string name="action_settings">Settings</string>
+    <string name="updateButtonName">Convert</string>
+    <string name= "calMessage"></string>
+    <string name= "exerciseUnit">Mins</string>
+    <string name="numUnits">0</string>
+
+
+    <string-array name="exercise_array">
+        <item>Pushups</item>
+        <item>Situps</item>
+        <item>Squats</item>
+        <item>Cycling</item>
+        <item>Leg-lift</item>
+        <item>Plank</item>
+        <item>Jumping Jacks</item>
+        <item>Pullup</item>
+        <item>Walking</item>
+        <item>Jogging</item>
+        <item>Swimming</item>
+        <item>Stair Climbing</item>
+
+    </string-array>
+
+</resources>

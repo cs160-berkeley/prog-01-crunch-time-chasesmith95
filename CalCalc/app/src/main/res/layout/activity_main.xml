@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    >
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/updateButtonName"
+        android:id="@+id/updateButton"
+        android:onClick="update"
+        android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="53dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/calMessage"
+        android:layout_toStartOf="@+id/excerciseUnit"
+        android:height="60dp"
+        android:clickable="false"
+        android:layout_alignParentBottom="true" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spinner"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/updateButton"
+        android:layout_marginTop="69dp"
+        android:spinnerMode="dropdown" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:id="@+id/excerciseUnit"
+        android:layout_alignTop="@+id/spinner"
+        android:layout_toEndOf="@+id/updateButton"
+        android:layout_marginStart="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/numUnits"
+        android:layout_alignStart="@+id/updateButton"
+        android:layout_toStartOf="@+id/excerciseUnit"
+        android:hint="0"
+        android:layout_alignTop="@+id/spinner" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/convertedExercises"
+        android:layout_below="@+id/updateButton"
+        android:layout_above="@+id/calMessage" />
+
+
+</RelativeLayout>
